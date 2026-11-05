@@ -33,6 +33,7 @@
     menu.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
     toggle.setAttribute("aria-label", "Open navigation menu");
+    header?.classList.remove("is-menu-open");
   };
 
   const openMenu = () => {
@@ -40,6 +41,7 @@
     menu.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
     toggle.setAttribute("aria-label", "Close navigation menu");
+    header?.classList.add("is-menu-open");
   };
 
   if (toggle && menu) {
